@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <form>
+        Num 1 :<input type="text" id="i1">
+        <br><br>
+        Num 2 :<input type="text" id="i2">
+        <br><br>
+        Symbol
+        <input type="text" id="i3" placeholder=" + , - , * , / " onkeyup="demo1()">
+
+        
+        <h1 id="h11"></h1>
+    </form>
+
+    <script>
+        function demo1()
+        {
+            var a1=parseInt(document.getElementById('i1').value);
+            var a2=parseInt(document.getElementById('i2').value);
+            
+            var ans=document.getElementById('i3').value;
+            
+            switch(ans)
+            {
+                case "+" :
+                    // console.log(a1+a2);
+                    document.getElementById("h11").innerHTML= "addition of two number is " +( a1 + a2);
+                    break;
+                case "-" :
+                    // console.log(a1-a2);
+                    document.getElementById("h11").innerHTML= "Substraction of two number is " +( a1 - a2);
+                    break;
+                case "*" :
+                    // console.log(a1*a2);
+                    document.getElementById("h11").innerHTML= "Multiplication of two number is " +( a1 * a2);
+                    break;
+                case "/" :
+                    // console.log(a1/a2);
+                    document.getElementById("h11").innerHTML= "Division of two number is " +( a1 / a2);
+                    break;
+                default:
+                    document.getElementById("h11").innerHTML="invalid input...";
+
+                 
+            }
+            
+        }
+    </script>
+</body>
+</html>

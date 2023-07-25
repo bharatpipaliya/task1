@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="background-color: yellow;">
+    <h1>Selectors....</h1>
+
+    <h2 id="a1" class="a1" name="demo">using tag name</h2>
+
+    <h2 id="a1" class="a1" name="demo">using class</h2>
+
+    <h2 id="a1" class="a1" name="demo">query selector id</h2>
+    <h2 id="a1" class="a1" name="demo">query selector class</h2>
+    <h2 id="a1" class="a1" name="demo">using id</h2>
+    <h2 id="a1" class="a1" name="demo">using name</h2>
+
+    <p id="p1"></p>
+    <script>
+      ans1 = document.getElementsByTagName("h2");
+      ans1[0].style.color = "blue";
+      ans1[0].style.border = "2px groove";
+
+      // ans1 = document.getElementsByTagName("h2");
+      // ans1[0].style.color = "red";
+      // ans1[0].style.border = "2px dashed";
+
+      // ans1 = document.getElementsByClassName("a1");
+      // ans1[1].style.color = "red";
+      // ans1[1].style.border = "2px dotted";
+
+      // ans1 = document.querySelectorAll("#a1");
+      // ans1[2].style.color = "purple";
+      // ans1[2].style.border = "2px dashed";
+      // ans1[2].style.fontSize = "50px";
+
+      // ans1 = document.querySelectorAll(".a1");
+      // ans1[3].style.color = "green";
+      // ans1[3].style.border = "10px double";
+
+      // ans1 = document.getElementsByName("demo");
+      // ans1[5].style.color = "grey";
+      // ans1[5].style.border = "2px solid";
+
+      // ans1 = document.getElementById("a1");
+      // ans1[4].style.color = "grey";
+      // ans1[4].style.border = "2px solid";
+
+      for(i=0;i<ans1.length;i++)
+      {
+        ans1[i].style.color="red";
+        var x=document.getElementById('p1').innerHTML="total element is " +  ans1.length;
+
+        
+      }
+    </script>
+  </body>
+</html>

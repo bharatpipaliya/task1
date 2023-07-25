@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <form>
+        Num 1 :<input type="text" id="i1">
+        <br><br>
+        Num 2 :<input type="text" id="i2">
+        <br><br>
+        Symbol
+        <input type="text" id="i3" placeholder=" + , - , * , / ">
+
+        <button type="button" onclick="answer()">Answer..</button>
+        <h1 id="h11"></h1>
+    </form>
+
+    <script>
+        function answer()
+        {
+                var no1 = parseInt(document.getElementById("i1").value);
+                var no2 = parseInt(document.getElementById("i2").value);
+                var no3 = document.getElementById("i3").value;
+
+                if(no3 == "+")
+                {
+                //    document.write("no1 + no2 = " + (no1+no2));
+                   document.getElementById('h11').innerHTML = "addition of 2 number is "+ (no1+ no2);
+                }
+                else if(no3 == "-")
+                {
+                    // document.write("no1 - no2 = "+  (no1-no2));
+                    document.getElementById('h11').innerHTML = "Substraction of 2 number is "+ (no1- no2);
+                }
+                else if(no3 == "*")
+                {
+                    // document.write("no1 * no2 = " + (no1*no2));
+                    document.getElementById('h11').innerHTML = "Multiplication of 2 number is "+ (no1* no2);
+                }
+                else if(no3 == "/")
+                {
+                    // document.write("no1 / no2 = " + (no1/no2));
+                    document.getElementById('h11').innerHTML = "Division of 2 number is "+ (no1/ no2);
+                }
+                else
+                {
+                    // document.write("none of this");
+                    document.getElementById('h11').innerHTML = "Plz ENter Correct Symbol ";
+                }
+
+
+        }
+    </script>
+</body>
+</html>

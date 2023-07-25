@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error illum nesciunt eligendi ducimus nemo exercitationem ipsum id rerum amet dicta.
+    </p>
+
+
+    <button onclick="hide1()">Hide</button>
+    <button onclick="show1()">Show</button>
+    <button onclick="hideshow()">Hide or Show</button>
+
+    <!-- <p id="para1" onmouseout="change1()">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, consequatur!
+    </p> -->
+    
+    <script>
+            var p1=document.getElementById('para');
+            var p2=document.getElementById('para1');
+
+            function hide1()
+            {
+                p1.style.display="none";
+            }
+            function show1()
+            {
+                p1.style.display="block";
+                p1.style.color="red";
+            }
+
+            function hideshow()
+            {
+                if(p1.style.display=="block")
+                {
+                    p1.style.display="none";
+                }
+                else
+                {
+                    p1.style.display="block"
+                    p1.style.color="red";
+                }
+            }
+
+            function change1()
+            {
+                p2.innerHTML="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error illum nesciunt eligendi ducimus nemo exercitationem ipsum id rerum amet dicta.";
+            }
+    </script>
+</body>
+</html>

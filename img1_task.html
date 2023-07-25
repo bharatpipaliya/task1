@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image task</title>
+</head>
+<body>
+    <h1>Click on image to change</h1>
+
+    <!-- <img src="dima-panyukov-DwxlhTvC16Q-unsplash.jpg" alt="" id="i1" height="200px" width="400px" onclick="change1()"> -->
+    <!-- <img src="dima-panyukov-DwxlhTvC16Q-unsplash.jpg" alt="" id="i1" height="200px" width="400px" onmouseover="change1()"> -->
+    <!-- <img src="dima-panyukov-DwxlhTvC16Q-unsplash.jpg" alt="" id="i1" height="200px" width="400px" onmousemove="change1()"> -->
+    <img src="dima-panyukov-DwxlhTvC16Q-unsplash.jpg" alt="" id="i1" height="200px" width="400px" onmousewheel="change1()">
+    <!-- <img src="dima-panyukov-DwxlhTvC16Q-unsplash.jpg" alt="" id="i1" height="200px" width="400px" ondblclick="change1()"> -->
+
+
+    <script>
+        
+        function change1()
+        {
+            img1 = document.getElementById('i1');
+                img1.src="pexels-mike-bird-3729464.jpg";
+
+            
+        }
+         setTimeout(change1,5000)
+    </script>
+
+
+</body>
+</html>

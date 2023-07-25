@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare 2 Numbers</title>
+</head>
+<body>
+    <form>
+    <input type="text" id="i1" />
+    <br><br>
+    <input type="text" id="i2" onkeyup="demo1()"/>
+    <br><br>
+    <!-- <button type="button" onclick="demo1()">
+        click
+    </button> -->
+</form>
+    <h1 id="h1"></h1>
+
+</body>
+
+<script>
+    function demo1()
+    {
+        var a=document.getElementById('i1').value;
+        var b=document.getElementById('i2').value;
+        var a1=parseInt(a);
+        var a2=parseInt(b);
+
+        // console.log(a1);
+        // console.log(a2);
+        if(a1>a2)
+        {
+                document.getElementById('h1').innerHTML="value of a is bigger than b";
+        }
+        else
+        {
+            document.getElementById('h1').innerHTML="value of b is bigger than a";
+        }
+
+    }
+</script>
+</html>
